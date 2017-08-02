@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- script -->
+    <<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</head>
+<style type="text/css">
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#alert {
+    margin: 0;
+    color: crimson;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+
+<body>
+    <div id="googleMap" style="width:100%;height:800px"></div>
+    <script>
+    function myMap() {
+        var vnu = {
+            lat: 21.038186,
+            lng: 105.782660
+        };
+        var mapProp = {
+            center: vnu,
+            zoom: 18,
+        };
+        var map = new google.maps.Map($('#googleMap')[0], mapProp);
+        var marker = new google.maps.Marker({ position: mapProp.center });
+        marker.setMap(map);
+
+        google.maps.event.addListener(marker, 'click', function() {
+            // body...
+
+            $('#myModal').modal('show');
+        });
+    }
+    </script>
+    <!-- start link map API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5tN5RTOzpAS4nn4vm4P8cJ9BDh04Eh54&callback=myMap"></script>
+    <!-- end link map API -->
+    <!-- start bootstrap model dialog -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Demo</h4>
+                </div>
+                <div class="modal-body">
+                    <canvas id="myChart" width="568" height="300"></canvas>
+                    <div id="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end bootstrap model dialog-->
+    <script type="text/javascript">
+    var myChart = null;
+    var timeInterval = null;
+
+    //bắt sự kiện mở modal
+    $('#myModal').on('shown.bs.modal', function(event) {
+        //lấy 6 doc mới nhất(dạng json) từ localhost:8081/json
+        //lần đầu tiên -> sử dụng dữ liệu để vẽ Chart
+        //những lần tiếp theo -> sử dụng dữ liệu để update Chart
+        //sau 2s lại getdata 1 lần
+        getData();
+
+    }).on('hidden.bs.modal', function(event) {
+        // reset canvas size
+        var modal = $(this);
+        var canvas = modal.find('.modal-body canvas');
+        canvas.attr('width', '568px').attr('height', '300px');
+        // destroy modal
+        $(this).data('bs.modal', null);
+        // clear interval
+        if (timeInterval) clearTimeout(timeInterval);
+
+    });
+
+    function drawChart(temp, hud, timeLabel) {
+        // body...
+        var modal = $('#myModal');
+        var canvas = modal.find('.modal-body canvas');
+        var ctx = canvas[0].getContext("2d");
+        var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: timeLabel,
+                    datasets: [{
+                        label: 'Temperature',
+                        yAxisID: "y-axis-0",
+                        fill: false,
+                        data: temp,
+                        backgroundColor: [
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)'
+                        ],
+                        borderColor: [
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)'
+                        ],
+                        pointHoverBackgroundColor: [
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)'
+                        ],
+                        pointHoverBorderColor: [
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)',
+                            'rgba(255,0,0,1)'
+                        ],
+                        borderWidth: 2,
+                    },
+                    {
+                        label: 'Humidity',
+                        yAxisID: "y-axis-1",
+                        fill: false,
+                        data: hud,
+                        backgroundColor: [
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)'
+                        ],
+                        borderColor: [
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)'
+                        ],
+                        pointHoverBackgroundColor: [
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)'
+                        ],
+                        pointHoverBorderColor: [
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)',
+                            'rgba(0, 0, 255, 1)'
+                        ],
+                        borderWidth: 2,
+                    }]
+                },
+                options: {
+                    elements: {
+                        line: {
+                            tension: 0, // disables bezier curves
+                        }
+                    },
+                    animation: {
+                        duration: 0, // general animation time
+                    },
+                    scales: {
+                        yAxes: [{
+                            position: "left",
+                            "id": "y-axis-0",
+                            gridLines: {
+                                display: false
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                max: 60
+                            },
+                            afterTickToLabelConversion: function (q) {
+                                for (var tick in q.ticks) {
+                                    q.ticks[tick] += '\u00B0C';
+                                }
+                            }
+                        },
+                        {
+                            position: "right",
+                            "id": "y-axis-1",
+                            gridLines: {
+                                display: false
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                max: 100
+                            },
+                            afterTickToLabelConversion: function (q) {
+                                for (var tick in q.ticks) {
+                                    q.ticks[tick] += '%';
+                                }
+                            }
+                        }],
+                        xAxes: [{
+                            type: 'time',
+                            gridLines: {
+                                display: false
+                            },
+                            time: {
+                                //Formats: "HH:mm:ss",
+                                unit: 'second',
+                                displayFormats: {
+                                    'second': 'HH:mm:ss'
+                                }
+                            },
+                            ticks: {
+                                display: true
+                            }
+                        }]
+
+                    },
+                    responsive: true
+                }
+            });
+    }
+
+    function updateChart(timeLabel, temp, hud) {
+        myChart.data.datasets[0].data = temp;
+        myChart.data.datasets[1].data = hud;
+        myChart.data.labels = timeLabel;
+        myChart.update();
+    }
+
+    function getData() {
+        $.ajax({
+            url: 'http://localhost:3000/json',
+            type: "GET",
+            dataType: "json",
+            success: function(response) {
+                if (response.length === 0) {
+                    $('#alert').html('we have no data');
+                } else {
+                    $('#alert').html('');
+
+                    var timeLabel = [];
+                    var temp = [];
+                    var hud = [];
+
+                    timeLabel.unshift(moment(response[0].timestamp).format());
+                    temp.unshift(response[0].temperature);
+                    hud.unshift(response[0].Humidity);
+
+                    for (var i = 1; i < 5; i++) {
+                        if (response[i]) {
+                            timeLabel.unshift(moment(response[i].timestamp).format());
+                            temp.unshift(response[i].temperature);
+                            hud.unshift(response[i].Humidity);
+                        } else {
+                            timeLabel.unshift(moment(response[0].timestamp).subtract(moment.duration((i * 4), 's')).format());
+                            temp.unshift(undefined);
+                            hud.unshift(undefined);
+                        }
+                    }
+
+                    if (myChart) updateChart(timeLabel, temp, hud);
+                    else drawChart(temp, hud, timeLabel);
+                }
+                timeInterval = setTimeout(getData, 2000);
+            }
+        });
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,761 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ti",
+				"title"
+			],
+			[
+				"pro",
+				"process.abort();"
+			],
+			[
+				"wifi",
+				"WiFi"
+			],
+			[
+				"http",
+				"httpsPort"
+			],
+			[
+				"Http",
+				"HTTPSRequest"
+			],
+			[
+				"php",
+				"php\t<?php … ?>"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"U",
+				"url()"
+			],
+			[
+				"p",
+				"p\tTag"
+			],
+			[
+				"h2",
+				"h2\tTag"
+			],
+			[
+				"h",
+				"href"
+			],
+			[
+				"a",
+				"a\tTag"
+			],
+			[
+				"httpcres",
+				"https.createServer(opts, requestListener);"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"id",
+				"id_tin"
+			],
+			[
+				"tr",
+				"trang_hientai"
+			],
+			[
+				"tn",
+				"tintucs"
+			],
+			[
+				"idloai",
+				"id_loaitin"
+			],
+			[
+				"idla",
+				"id_loaitin"
+			],
+			[
+				"m",
+				"m_tintuc"
+			],
+			[
+				"tintu",
+				"tintucs"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"arr",
+				"array\t$… = array (…)"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"SLE",
+				"SELECT"
+			],
+			[
+				"TieuD",
+				"TieuDeKhongDau"
+			],
+			[
+				"join",
+				"JOIN"
+			],
+			[
+				"loai",
+				"loaitin"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"incl",
+				"incl\tinclude …"
+			],
+			[
+				"sl",
+				"sql"
+			],
+			[
+				"inc",
+				"incl\tinclude …"
+			],
+			[
+				"icn",
+				"incl1\tinclude_once …"
+			],
+			[
+				"mysfe",
+				"mysql_fetch_assoc"
+			],
+			[
+				"con",
+				"conn"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"str_s",
+				"str_split"
+			],
+			[
+				"PHP",
+				"PHP_OS"
+			],
+			[
+				"phpname",
+				"php_uname"
+			],
+			[
+				"file",
+				"file_hien_tai"
+			],
+			[
+				"fiterva",
+				"filter_var"
+			],
+			[
+				"par",
+				"parse_url"
+			],
+			[
+				"fi",
+				"film_id"
+			],
+			[
+				"ac",
+				"actor_id"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"Gre",
+				"GREETING"
+			],
+			[
+				"dw",
+				"dwh_prod"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"coun",
+				"count"
+			],
+			[
+				"mysql",
+				"mysqldump"
+			],
+			[
+				"form",
+				"FROM"
+			],
+			[
+				"crea",
+				"CREATE"
+			],
+			[
+				"ren",
+				"rental"
+			],
+			[
+				"sot",
+				"store"
+			],
+			[
+				"sal",
+				"sales_by_store_month"
+			],
+			[
+				"as",
+				"AS"
+			],
+			[
+				"cus",
+				"customer_id"
+			],
+			[
+				"iS",
+				"IS"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"wher",
+				"WHERE"
+			],
+			[
+				"inve",
+				"inventory_id"
+			],
+			[
+				"null",
+				"NULL"
+			],
+			[
+				"el",
+				"ELSEIF"
+			],
+			[
+				"re",
+				"rental_id"
+			],
+			[
+				"fom",
+				"FROM"
+			],
+			[
+				"is",
+				"is_available"
+			],
+			[
+				"ne",
+				"NEW"
+			],
+			[
+				"sa",
+				"staff_id"
+			],
+			[
+				"pay",
+				"payment_id"
+			],
+			[
+				"afte",
+				"after_payment_insert"
+			],
+			[
+				"tri",
+				"TRIGGER"
+			],
+			[
+				"cre",
+				"CREATE"
+			],
+			[
+				"add",
+				"ADD"
+			],
+			[
+				"paymen",
+				"payment_log"
+			],
+			[
+				"real",
+				"rental_date"
+			],
+			[
+				"sum",
+				"sumFilm"
+			],
+			[
+				"retl",
+				"rental"
+			],
+			[
+				"reti",
+				"rentalFilm"
+			],
+			[
+				"Count",
+				"COUNT"
+			],
+			[
+				"adn",
+				"AND"
+			],
+			[
+				"fil",
+				"film"
+			],
+			[
+				"p_",
+				"p_language_id"
+			],
+			[
+				"ten",
+				"THEN"
+			],
+			[
+				"de",
+				"DELIMITER"
+			],
+			[
+				"sto",
+				"store_id"
+			],
+			[
+				"fim",
+				"film_id"
+			],
+			[
+				"j",
+				"JOIN"
+			],
+			[
+				"ad",
+				"address"
+			],
+			[
+				"s",
+				"store"
+			],
+			[
+				"whe",
+				"WHERE"
+			],
+			[
+				"of",
+				"officeCode"
+			],
+			[
+				"office",
+				"officeCode"
+			],
+			[
+				"f",
+				"FROM"
+			],
+			[
+				"ofic",
+				"offices"
+			],
+			[
+				"R",
+				"RenderScene"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"control",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 367.0
+	},
+	"console":
+	{
+		"height": 114.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Old/hải/my love/564421_242520312570724_1976261083_n.jpg",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/views/header.pug",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/views/footer.pug",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/views/content.pug",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/views/dynamic.pug",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/index.js",
+		"/D/CODE/nodejs/12_tutorialspoint/3-templating/views/first_view.pug",
+		"/D/CODE/nodejs/12_tutorialspoint/2-middleware/index.js",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/snippets/char.sublime-snippet",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/Arduino-like IDE/snippets/serial_setTimeOut.sublime-snippet",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/User/Automatic Backups.sublime-settings",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/Automatic Backups/Default (Windows).sublime-keymap",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/Automatic Backups/Automatic Backups.sublime-settings",
+		"/D/CODE/nodejs/12_tutorialspoint/1-routing/things.js",
+		"/D/CODE/nodejs/12_tutorialspoint/1-routing/package.json",
+		"/F/game/Vforum.Vn_CS1.1/DienDanBacLieu.Net_CS1.1/CS11/_SETUP.DLL",
+		"/D/CODE/nodejs/12_tutorialspoint/1-routing/index.js",
+		"/D/CODE/nodejs/11_booknodejs/Server.js",
+		"/C/Users/DELL/Documents/Arduino/final/final.ino",
+		"/D/CODE/nodejs/11_booknodejs/config.js",
+		"/D/CODE/nodejs/10_mongodb/1_Create_Database.js",
+		"/D/CODE/nodejs/IoT/test/index.js",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/D/CODE/nodejs/IoT/webduino/index.js",
+		"/D/CODE/nodejs/mongodb/index.js",
+		"/D/CODE/nodejs/mongodb/1_Create_Database.js",
+		"/D/CODE/nodejs/mongodb/2_Create_Table.js",
+		"/D/CODE/nodejs/express_postgreSQL/index.js",
+		"/D/CODE/nodejs/taoproject/index.js",
+		"/D/CODE/nodejs/DemoHeroku/index.js",
+		"/D/CODE/nodejs/coban/demo/test.php",
+		"/D/CODE/nodejs/async_await/views/home.ejs",
+		"/D/CODE/nodejs/async_await/index.js",
+		"/D/CODE/nodejs/coban/webServer02/xuly.js",
+		"/D/CODE/nodejs/coban/server_01/app.js",
+		"/D/CODE/nodejs/coban/SERVER/index.html",
+		"/D/CODE/nodejs/coban/SERVER/app.js",
+		"/C/xampp/htdocs/IoT/serverTest.php",
+		"/C/xampp/htdocs/test/tao.php",
+		"/C/xampp/htdocs/test/thu.php",
+		"/D/CODE/nodejs/DemoHeroku/Procfile",
+		"/D/CODE/nodejs/DemoHeroku/views/trangchu.ejs",
+		"/D/CODE/nodejs/DemoKhoaPham/views/trangchu.ejs",
+		"/D/CODE/nodejs/DemoKhoaPham/index.js",
+		"/D/CODE/nodejs/upload/views/form.ejs",
+		"/D/CODE/nodejs/upload/index.js",
+		"/D/CODE/nodejs/express_postgreSQL/views/trangchu.ejs",
+		"/D/CODE/nodejs/express_postgreSQL/views/chitiet.ejs",
+		"/D/CODE/nodejs/express_postgreSQL/views/namsinh.ejs",
+		"/D/CODE/nodejs/CHEERIO_HAINGUYEN/views/trangchu.ejs",
+		"/D/CODE/nodejs/express_postgreSQL/views/trangchu.html",
+		"/D/CODE/nodejs/CHEERIO_HAINGUYEN/index.js",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/DELL/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/CODE/nodejs/SERVER/app.js",
+		"/D/CODE/hoc HTML/part1_HTML/list.html",
+		"/D/CODE/hoc HTML/part1_HTML/hello2.html",
+		"/F/Old/HKII_Nam3/TKGDND/PTTKHDT_revise.txt",
+		"/E/xampp/htdocs/test_db2.php",
+		"/C/xampp/htdocs/test_db2.php",
+		"/E/XAMPP/htdocs/test_db2.php",
+		"/E/XAMPP/php/php.ini",
+		"/C/xampp/php/php.ini",
+		"/C/xampp/php/ext/php_ibm_db2.dll",
+		"/C/xampp/htdocs/tintuc/model/m_tintuc.php",
+		"/C/xampp/htdocs/tintuc/controller/c_tintuc.php",
+		"/C/xampp/htdocs/tintuc/chitiet.php",
+		"/C/Users/DELL/Desktop/abc.html",
+		"/F/source code/KhuDulich.net/DB-MySQL/khudl.sql",
+		"/C/Users/DELL/Desktop/trang-chu.html",
+		"/F/source code/Đồ án PHP/Quản lý website nhà đất PHP/nhadatan_vnet.sql",
+		"/C/Users/DELL/Desktop/tour/tourDB.sql",
+		"/C/xampp/htdocs/tintuc/model/pager.php",
+		"/C/xampp/htdocs/tintuc/loaitin.php",
+		"/C/xampp/htdocs/tintuc/index.php",
+		"/C/xampp/htdocs/tintuc/model/database.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/product/listed.php",
+		"/C/xampp/htdocs/MVCcoban/library/__autoload.php",
+		"/C/xampp/htdocs/MVCcoban/views/product/listed_view.php",
+		"/C/xampp/htdocs/MVCcoban/models/product/product.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/product/product.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/add.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/del.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/del_view.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/user_view.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/add_view.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/edit.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/edit_view.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/login.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/listed.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/login_view.php",
+		"/C/xampp/htdocs/MVCcoban/views/user/listed_view.php",
+		"/C/xampp/htdocs/MVCcoban/index.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user/user.php",
+		"/C/xampp/htdocs/MVCcoban/models/user/user.php",
+		"/C/xampp/htdocs/MVCcoban/models/list_user.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/list_user.php",
+		"/C/xampp/htdocs/MVCcoban/library/connect.php",
+		"/C/xampp/htdocs/MVCcoban/views/list_user_view.php",
+		"/C/xampp/phpMyAdmin/setup/index.php",
+		"/C/xampp/phpMyAdmin/libraries/Config.php",
+		"/C/xampp/phpMyAdmin/libraries/config/ConfigFile.php",
+		"/C/xampp/phpMyAdmin/libraries/config/config_functions.lib.php",
+		"/C/xampp/phpMyAdmin/libraries/config/ServerConfigChecks.php",
+		"/C/xampp/phpMyAdmin/setup/config.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/edit_user.php",
+		"/C/xampp/htdocs/MVCcoban/views/edit_user_view.php",
+		"/C/xampp/htdocs/MVCcoban/views/del_user_view.php",
+		"/C/xampp/htdocs/MVCcoban/views/add_user_view.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/del_user.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/add_user.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/user.php",
+		"/C/xampp/htdocs/MVCcoban/controllers/product.php",
+		"/C/xampp/htdocs/MVCcoban/user.php",
+		"/C/xampp/htdocs/PHPcoban/test.php",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/[INT32021][N3]_NguyenVanHai_14020146_Lab05.txt",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/[INT32021][N3]_NguyenVanHai_14020146_Lab03.txt",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/[INT32021][N3]_NguyenVanHai_14020146_Lab04.txt",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/[INT32021][N3]_NguyenVanHai_14020146_Lab02.txt",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/testAll.txt",
+		"/C/xampp/htdocs/Test/test.php",
+		"/C/xampp/htdocs/Test/welcome.php",
+		"/C/xampp/htdocs/Test/model.php",
+		"/F/Old/note_backup/htdocs/BTL/Search/search.php",
+		"/D/CODE/angularJS/conFusion/app/menu.html",
+		"/C/Users/DELL/Downloads/HQTCSDL/code/[INT32021][N3]_NguyenVanHai_14020146_Lab06.txt",
+		"/F/Old/note_backup/htdocs/BTL/kq_search.php",
+		"/F/Old/note_backup/htdocs/BTL/model/model.php"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\CODE\\nodejs\\upload"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"start",
+			"httpsPort",
+			"w_ssid",
+			"httpsPort",
+			"php_ibm",
+			"php_pdo",
+			"php_pdo.",
+			"js/",
+			"css/",
+			"menu",
+			"Project Five",
+			"js/",
+			"image/",
+			"css/",
+			"HinhTin",
+			"TieuDeTin",
+			"Category",
+			"tin tuc",
+			"loaitin",
+			"carousel",
+			"image/",
+			"js/",
+			"css/",
+			"_soap",
+			"soap",
+			"php_mcryp",
+			"php_mcrypt",
+			"();\n",
+			"3306",
+			"dump",
+			"drop",
+			"delete",
+			"user",
+			"insert",
+			"INTO",
+			"`",
+			"extension=php_mcrypt.dll",
+			"4433",
+			"443",
+			"find what"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"public/js/",
+			"public/css/",
+			"public/js/",
+			"public/image/",
+			"public/css/",
+			"public/image/",
+			"public/js/",
+			"public/css/",
+			"",
+			"4433",
+			"4499"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "package.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
